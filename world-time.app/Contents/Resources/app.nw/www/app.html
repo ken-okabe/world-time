@@ -95,6 +95,23 @@
     </div>
     <div class="cell">
       <p>
+        London+2(FX offset)
+      </p>
+      <ul class="clock">
+        <li class="sec"></li>
+        <li class="hour"></li>
+        <li class="min"></li>
+      </ul>
+
+      <p>
+        ----
+      </p>
+      <p>
+        ----
+      </p>
+    </div>
+    <div class="cell">
+      <p>
         Tokyo
       </p>
       <ul class="clock">
@@ -193,7 +210,8 @@
     {　
       time[0] = moment().tz('America/New_York');
       time[1] = moment().tz('Europe/London');
-      time[2] = moment().tz('Asia/Tokyo');　
+      time[2] = moment().tz('Europe/London').add(2, 'hours');
+      time[3] = moment().tz('Asia/Tokyo');　
       time.map(function(t, i)
       {
         doTime(i);
