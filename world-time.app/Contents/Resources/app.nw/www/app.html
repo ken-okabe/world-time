@@ -61,7 +61,7 @@
   <div class="table">
     <div class="cell">
       <p>
-        Tokyo
+        NewYork
       </p>
       <ul class="clock">
         <li class="sec"></li>
@@ -95,7 +95,7 @@
     </div>
     <div class="cell">
       <p>
-        NewYork
+        Tokyo
       </p>
       <ul class="clock">
         <li class="sec"></li>
@@ -191,9 +191,9 @@
 
     setInterval(function()
     {　
-      time[0] = moment().tz('Asia/Tokyo');
+      time[0] = moment().tz('America/New_York');
       time[1] = moment().tz('Europe/London');
-      time[2] = moment().tz('America/New_York');　
+      time[2] = moment().tz('Asia/Tokyo');　
       time.map(function(t, i)
       {
         doTime(i);
