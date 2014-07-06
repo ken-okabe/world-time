@@ -1,12 +1,24 @@
 {
-	"name": "app",
-	"main": "./www/app.html",
-	"window": {
+  "name": "world-time",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./www/app.html",
+  "dependencies": {
+    "moment-timezone": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ken Okabe",
+  "license": "MIT",
+  
+  "window": {
     "title": "world-clock",
     "toolbar": true,
     "frame": false,
     "width": 1200,
     "height": 500
-
   }
-}
+} 
+	
